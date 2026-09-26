@@ -1,2 +1,35 @@
+# Dependencies
+node_modules/
 
-/src/generated/prisma
+# Build output
+dist/
+
+# Environment variables — never commit secrets
+.env
+.env.*
+!.env.example
+
+# SQLite database files
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Prisma generated client
+src/generated/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# TypeScript cache
+*.tsbuildinfo
